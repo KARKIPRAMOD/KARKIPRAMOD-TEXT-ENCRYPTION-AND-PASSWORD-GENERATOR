@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="ceaser.css" />
+  </head>
+  <body>
+    <div class="cipher-container">
+      <div class="encryption">
+        <h1>Caesar Cipher Encryption</h1>
+        <form>
+          <label for="caesar_text">Text to Encrypt:</label>
+          <input type="text" id="caesar_text" name="caesar_text" /><br />
+          <label for="shift">Shift Value:</label>
+          <input type="number" id="shift" name="shift" /><br />
+          <button type="button" onclick="encryptCaesar()">Encrypt</button>
+        </form>
+        <br />
+        <label for="encrypted_caesar">Encrypted Text:</label>
+        <input type="text" id="encrypted_caesar" readonly />
+      </div>
+      <div class="decryption">
+        <h1>Caesar Cipher Decryption</h1>
+        <form>
+          <label for="caesar_text">Text to Decrypt:</label>
+          <input type="text" id="old_caesar_text" name="caesar_text" /><br />
+          <label for="shift">Shift Value:</label>
+          <input type="number" id="old_shift" name="shift" /><br />
+          <button type="button" onclick="decryptCaesar()">Encrypt</button>
+        </form>
+        <br />
+        <label for="decrypted_caesar">Encrypted Text:</label>
+        <input type="text" id="decrypted_caesar" readonly />
+      </div>
+    </div>
+
+    <script src="cipher.js"></script>
+  </body>
+</html>
