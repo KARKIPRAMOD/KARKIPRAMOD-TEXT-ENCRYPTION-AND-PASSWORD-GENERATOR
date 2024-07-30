@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vigenère Cipher</title>
+  </head>
+  <body>
+    <div class="cipher_container">
+      <div class="encryption">
+        <h1>Vigenère Cipher Encryption</h1>
+        <form action="">
+          <label for="cipher_text">Text to Encrypt:</label>
+          <input type="text" id="cipher_text" name="vigenere_text" /><br />
+          <label for="key">Key Value:</label>
+          <input type="text" id="key" name="key_value" /><br />
+          <button type="button" onclick="encrypt(1)">Encrypt</button>
+        </form>
+        <br />
+        <label for="encrypted_vigenere">Encrypted Text:</label>
+        <input type="text" id="encrypted_vigenere" readonly />
+      </div>
+      <div class="decryption">
+        <h1>Vigenère Cipher Decryption</h1>
+        <form action="">
+          <label for="old_cipher_text">Text to Decrypt:</label>
+          <input type="text" id="old_cipher_text" name="vigenere_text" /><br />
+          <label for="old_key">Key Value:</label>
+          <input type="text" id="old_key" name="key_value" /><br />
+          <button type="button" onclick="decrypt(-1)">Decrypt</button>
+        </form>
+        <br />
+        <label for="decrypted_vigenere">Decrypted Text:</label>
+        <input type="text" id="decrypted_vigenere" readonly />
+      </div>
+    </div>
+    <script src="vigenere.js"></script>
+  </body>
+</html>
