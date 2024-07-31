@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a7508;
+  padding: 10px 20px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #ddd;
+}
+
+.cipher_container {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.encryption,
+.decryption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: solid;
+  border-color: rgb(239, 240, 233);
+  transition: all 500ms;
+  background: white;
+  position: relative;
+}
+.encryption form,
+.decryption form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.encryption label,
+.decryption label {
+  margin-top: 10px;
+}
+
+.encryption input,
+.decryption input {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(9, 110, 187);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(6, 83, 141);
+}
+
+input[readonly] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+}

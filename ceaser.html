@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="ceaser.css" />
+    <link rel="stylesheet" href="css/ceaser.css" />
   </head>
   <body>
-    <div class="cipher-container">
+    <nav class="navbar">
+      <div class="right">
+        <a href="index.html" class="nav-item">HOME</a>
+      </div>
+      <div class="left">
+        <a href="pass_gen.html" class="nav-item">Password Generator</a>
+        <a href="vigenere_cipher.html" class="nav-item">vigenere cipher</a>
+      </div>
+    </nav>
+    <div class="cipher_container">
       <div class="encryption">
         <h1>Caesar Cipher Encryption</h1>
         <form>
@@ -31,11 +40,11 @@
           <button type="button" onclick="decryptCaesar()">Encrypt</button>
         </form>
         <br />
-        <label for="decrypted_caesar">Encrypted Text:</label>
+        <label for="decrypted_caesar">Decrypted Text:</label>
         <input type="text" id="decrypted_caesar" readonly />
       </div>
     </div>
 
-    <script src="cipher.js"></script>
+    <script src="js/cipher.js"></script>
   </body>
 </html>
